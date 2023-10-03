@@ -2,7 +2,7 @@
 
 /* appearance */
 #include <X11/Xlib.h>
-static       char font[]        = "monospace:size=9";
+static       char font[]        = "JetBrainsMono Nerd Font:style=medium:size=16:antialias=true:autohint=true";
 static       char* selbgcolor   = "#222D31";
 static       char* selfgcolor   = "#cccccc";
 static       char* normbgcolor  = "#333333";
@@ -46,13 +46,13 @@ static Bool npisrelative  = True;
 #define MODKEY ControlMask
 static const Key keys[] = {
 	/* modifier             key           function     argument */
-    { MODKEY,               XK_Return,    focusonce,   { 0 } },
+  { MODKEY,               XK_Return,    focusonce,   { 0 } },
 	{ MODKEY,               XK_Return,    spawn,       { 0 } },
 
-    { MODKEY|ShiftMask,     XK_h,         rotate,      { .i = -1 } },
-    { MODKEY|ShiftMask,     XK_l,         rotate,      { .i = +1 } },
-    { MODKEY|ShiftMask,     XK_k,         movetab,     { .i = -1 } },
-    { MODKEY|ShiftMask,     XK_j,         movetab,     { .i = +1 } },
+  { MODKEY|ShiftMask,     XK_n,         rotate,      { .i = -1 } },
+  { MODKEY|ShiftMask,     XK_i,         rotate,      { .i = +1 } },
+  { MODKEY|ShiftMask,     XK_e,         movetab,     { .i = -1 } },
+  { MODKEY|ShiftMask,     XK_u,         movetab,     { .i = +1 } },
 	{ MODKEY,               XK_Tab,       rotate,      { .i = +1 } },
 	{ 0,                    XK_Prior,     rotate,      { .i = -1 } },
 	{ 0,                    XK_Next,      rotate,      { .i = +1 } },
